@@ -1,11 +1,12 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import time
 import sys
 from lightstreamer.client import *
 from datetime import datetime
 
-print("""                
+print("""
+                
          ____________    _______   ____
    ___  /  _/ __/ __/___/ ___/ /  /  _/
   / _ \_/ /_\ \_\ \/___/ /__/ /___/ /  
@@ -42,7 +43,7 @@ class SubListener(SubscriptionListener):
         
         # print
         sys.stdout.write(f"\rUrinelevels: {currentValue}% | Last updated: {currentTime} {changeText} | {bar}")
-        sys.stdout.flush()
+        sys.stdout.flush()  # Ausgabe sofort anzeigen
         
         previousValue = currentValue    
     
