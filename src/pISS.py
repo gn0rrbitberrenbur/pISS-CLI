@@ -43,7 +43,7 @@ class SubListener(SubscriptionListener):
         
         # print
         sys.stdout.write(f"\rUrinelevels: {currentValue}% | Last updated: {currentTime} {changeText} | {bar}")
-        sys.stdout.flush()  # Ausgabe sofort anzeigen
+        sys.stdout.flush()
         
         previousValue = currentValue    
     

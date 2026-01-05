@@ -4,7 +4,7 @@ stream the levels of the iss urinetank right in your terminal
 ## dependencies
 you need the [lightstreamer client sdk](https://sdk.lightstreamer.com/ls-python-client/2.1.0/api/intro.html). install it by running the following:
 ```
-pip install lightstreamer-client-lib
+pip install requirements.txt
 ```
 
 ## why???
